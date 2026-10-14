@@ -57,14 +57,29 @@ ai4i-maintenance/
 └── tests/test_project.py        # 11 tests (règles, validation, simulateur)
 ```
 
-## Reproduire
+## Reproduire le projet
+
+Créer et activer un environnement virtuel, puis installer les dépendances :
 
 ```bash
-pip install -r requirements.txt
-python -m pytest -q                                  # ~3 s
-jupyter nbconvert --to notebook --execute --inplace notebooks/ai4i_predictive_maintenance.ipynb   # ~3 min
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
 ```
 
+Exécuter les tests :
+
+```bash
+python -m pytest -q
+```
+
+Reproduire l'analyse complète :
+
+```bash
+jupyter nbconvert --to notebook --execute --inplace notebooks/ai4i_predictive_maintenance.ipynb
+```
+
+Les résultats peuvent dépendre des versions des bibliothèques et de l'environnement d'exécution. Les durées indiquées sont des mesures de référence, pas des garanties.
 Environnement de développement : Python 3.13, pandas 3.0.5, scikit-learn 1.9.1, NumPy 2.5.3. Graines fixées : les résultats sont identiques d'une exécution à l'autre.
 
 ## Limites
