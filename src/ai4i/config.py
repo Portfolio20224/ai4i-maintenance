@@ -1,4 +1,4 @@
-"""Paramètres globaux du projet.
+"""Paramètres du projet.
 
 Les paramètres économiques (COSTS) sont ILLUSTRATIFS : ils ne proviennent pas
 des données (le jeu AI4I n'en contient pas). Ils sont regroupés ici pour être
